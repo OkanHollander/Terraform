@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::all-pets/*",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::1234567:user/Lucy"
+                ]
+            }
+        }
+    ]
+}
